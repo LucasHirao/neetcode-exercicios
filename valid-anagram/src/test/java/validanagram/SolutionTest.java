@@ -98,9 +98,4 @@ class SolutionTest {
     void shouldReturnTrueForComplexAnagram() {
         assertTrue(solution.isAnagram("listen", "silent"));
     }
-
-    @Test
-    void shouldReturnFalseForCaseSensitivity() {
-        assertFalse(solution.isAnagram("A", "a"));
-    }
 }

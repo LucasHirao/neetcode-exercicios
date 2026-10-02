@@ -8,11 +8,11 @@ class Solution {
             return false;
         }
 
-        int[] count = new int[256];
+        int[] count = new int[26];
 
         for (int i = 0; i < s.length(); i++) {
-            count[s.charAt(i)]++;
-            count[t.charAt(i)]--;
+            count[Character.toLowerCase(s.charAt(i)) - 'a']++;
+            count[Character.toLowerCase(t.charAt(i)) - 'a']--;
         }
 
         for (int freq : count) {
