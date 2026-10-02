@@ -17,6 +17,7 @@
 
     <modules>
         <module>contains-duplicate</module>
+        <module>valid-anagram</module>
     </modules>
 
     <dependencyManagement>
