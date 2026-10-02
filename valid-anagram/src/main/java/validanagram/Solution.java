@@ -7,13 +7,16 @@ class Solution {
         if (s.length() != t.length()) {
             return false;
         }
-        var size = s.length();
 
-        var array1 = s.chars().sorted().toArray();
-        var array2 = t.chars().sorted().toArray();
+        int[] count = new int[256];
 
-        for (int i = 0; i < size; i++) {
-            if (array1[i] != array2[i]) {
+        for (int i = 0; i < s.length(); i++) {
+            count[s.charAt(i)]++;
+            count[t.charAt(i)]--;
+        }
+
+        for (int freq : count) {
+            if (freq != 0) {
                 return false;
             }
         }
