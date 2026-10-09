@@ -18,6 +18,7 @@
     <modules>
         <module>contains-duplicate</module>
         <module>valid-anagram</module>
+        <module>two-sum</module>
     </modules>
 
     <dependencyManagement>
